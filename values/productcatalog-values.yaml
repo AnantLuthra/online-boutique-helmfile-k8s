@@ -1,0 +1,15 @@
+appName: productcatalogservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice
+appVersion: v0.10.7
+replicaCount: 2
+containerPort: 3550
+containerEnvVar: 
+- name: PORT
+  value: "3550"
+requestedCpu: 100m
+requestedMemory: 64Mi
+limitCpu: 200m
+limitMemory: 128Mi
+
+servicePort: 3550
+serviceType: ClusterIP

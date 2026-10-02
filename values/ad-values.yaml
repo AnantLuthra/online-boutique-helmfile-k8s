@@ -1,0 +1,15 @@
+appName: adservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice
+appVersion: v0.10.7
+replicaCount: 2
+containerPort: 9555
+containerEnvVar: 
+- name: PORT
+  value: "9555"
+requestedCpu: 100m
+requestedMemory: 64Mi
+limitCpu: 200m
+limitMemory: 128Mi
+
+servicePort: 9555
+serviceType: ClusterIP

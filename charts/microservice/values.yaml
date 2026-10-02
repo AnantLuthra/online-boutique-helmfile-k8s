@@ -1,0 +1,17 @@
+appName: servicename
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice
+appVersion: v0.10.7
+replicaCount: 1
+containerPort: 8080
+containerEnvVar: 
+- name: ENV_VAR_ONE
+  value: "valueone"
+- name: ENV_VAR_TWO
+  value: "valuetwo"
+# requestedCpu: 100m
+# requestedMemory: 64Mi
+# limitCpu: 200m
+# limitMemory: 128Mi
+
+servicePort: 8080
+serviceType: ClusterIP

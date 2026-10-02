@@ -1,0 +1,16 @@
+appName: recommendationservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice
+appVersion: v0.10.7
+replicaCount: 2
+containerPort: 8080
+containerEnvVar: 
+- name: PORT
+  value: "8080"
+- name: PRODUCT_CATALOG_SERVICE_ADDR
+  value: "productcatalogservice:3550"
+requestedCpu: 100m
+requestedMemory: 64Mi
+limitCpu: 200m
+limitMemory: 128Mi
+servicePort: 8080
+serviceType: ClusterIP

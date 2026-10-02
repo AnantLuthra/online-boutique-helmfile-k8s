@@ -1,0 +1,17 @@
+appName: currencyservice
+appImage: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice
+appVersion: v0.10.7
+replicaCount: 2
+containerPort: 7000
+containerEnvVar: 
+- name: PORT
+  value: "7000"
+- name: DISABLE_PROFILER
+  value: "1"
+requestedCpu: 100m
+requestedMemory: 64Mi
+limitCpu: 200m
+limitMemory: 128Mi
+
+servicePort: 7000
+serviceType: ClusterIP

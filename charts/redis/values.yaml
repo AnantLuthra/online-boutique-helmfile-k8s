@@ -1,0 +1,15 @@
+appName: redis-cart
+appImage: redis
+appVersion: alpine
+volumeName: redis-data
+containerPort: 6379
+replicaCount: 1
+requestedCpu: 80m
+requestedMemory: 200Mi
+limitCpu: 120m
+limitMemory: 300Mi
+livelenessPeriodSeconds: 5
+readinessPeriodSeconds: 5
+containerMountPath: /data
+servicePort: 6379
+initialDelaySeconds: 5
